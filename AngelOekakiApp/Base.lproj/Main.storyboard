@@ -73,12 +73,18 @@
                                 <buttonConfiguration key="configuration" style="plain" title="アップロード">
                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="40"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="OnTapTakePhotoButton:" destination="0Ir-36-fXN" eventType="touchUpInside" id="K0U-SI-icA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fb3-3e-N8L"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="MbX-qb-CsG"/>
+                    <connections>
+                        <segue destination="HvF-Z7-toD" kind="presentation" identifier="toConfirm" id="BrL-EY-2s2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vd5-L1-9cG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -87,7 +93,7 @@
         <!--Confirm View Controller-->
         <scene sceneID="kKc-o7-zan">
             <objects>
-                <viewController id="HvF-Z7-toD" customClass="ConfirmViewController" customModule="AngelOekakiApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConfirmViewController" modalPresentationStyle="fullScreen" id="HvF-Z7-toD" customClass="ConfirmViewController" customModule="AngelOekakiApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mee-41-i30">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
