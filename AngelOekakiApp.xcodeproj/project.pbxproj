@@ -15,16 +15,28 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
+				ViewController/ConfirmViewController.swift,
 			);
 			target = F63D9BFF2D00629400822BFC /* AngelOekakiApp */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		10FB076C2D01E325006E1326 /* Exceptions for "AngelOekakiApp" folder in "Copy Bundle Resources" phase from "AngelOekakiApp" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = F63D9BFE2D00629400822BFC /* Resources */;
+			membershipExceptions = (
+				ViewController/ConfirmViewController.swift,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		F63D9C022D00629400822BFC /* AngelOekakiApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				F63D9C122D00629F00822BFC /* Exceptions for "AngelOekakiApp" folder in "AngelOekakiApp" target */,
+				10FB076C2D01E325006E1326 /* Exceptions for "AngelOekakiApp" folder in "Copy Bundle Resources" phase from "AngelOekakiApp" target */,
 			);
 			path = AngelOekakiApp;
 			sourceTree = "<group>";
