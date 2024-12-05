@@ -38,8 +38,6 @@ class ThemeSelectViewController: UIViewController {
 
 extension ThemeSelectViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        print("Finished picking media")
-        
         guard let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else {
             return
         }
