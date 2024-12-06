@@ -119,24 +119,29 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="40"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="CFS-Xm-cN4" kind="show" id="llh-7g-cjM"/>
+                                    <action selector="OnTappedResultButton:" destination="HvF-Z7-toD" eventType="touchUpInside" id="dod-sg-y61"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EpU-XV-QD5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="usi-Ta-hto" id="3dZ-xN-Jci"/>
+                        <outlet property="titleLabel" destination="KBQ-yr-GpN" id="E4N-IE-ijt"/>
+                        <segue destination="CFS-Xm-cN4" kind="presentation" identifier="toResult" id="tCo-TC-F8n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vFP-Uq-y3d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1840" y="4"/>
+            <point key="canvasLocation" x="1755" y="4"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="SDg-em-QDN">
             <objects>
-                <viewController id="CFS-Xm-cN4" customClass="ResultViewController" customModule="AngelOekakiApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="CFS-Xm-cN4" customClass="ResultViewController" customModule="AngelOekakiApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tjk-Sa-feg">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hq3-Sa-RjF">
@@ -182,10 +187,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="pU7-UQ-v6r"/>
+                    <connections>
+                        <outlet property="adviceLabel" destination="OC7-CX-bXl" id="hV6-hO-72N"/>
+                        <outlet property="drawedImageView" destination="hq3-Sa-RjF" id="EJT-dF-pxb"/>
+                        <outlet property="resultScoreLabel" destination="a8C-i0-A21" id="5YD-JP-VHh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T5g-50-9rR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2705" y="4"/>
+            <point key="canvasLocation" x="2679" y="4"/>
         </scene>
     </scenes>
     <resources>

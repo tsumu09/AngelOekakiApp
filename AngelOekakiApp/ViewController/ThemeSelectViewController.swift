@@ -31,7 +31,8 @@ class ThemeSelectViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toConfirm" {
             let destinationVC = segue.destination as? ConfirmViewController
-            destinationVC?.image = capturedImage!
+            destinationVC?.theme = Theme(id: 1, name: "ひまわりを描こう!!", imageName: "katuo")
+            destinationVC?.picturedImage = capturedImage
         }
     }
 }
