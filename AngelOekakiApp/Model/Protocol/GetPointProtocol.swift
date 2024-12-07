@@ -7,6 +7,6 @@
 
 import UIKit
 
-protocol GetPointProtocol {
-    func getPoint(image: UIImage, theme: Theme) -> String
+protocol GetScoreProtocol {
+    func getScore(image: UIImage, theme: Theme) -> String
 }

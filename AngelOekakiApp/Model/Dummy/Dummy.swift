@@ -6,8 +6,8 @@
 //
 import UIKit
 
-class Dummy : GetPointProtocol, GetAdviceProtocol {
-    func getPoint(image: UIImage, theme: Theme) -> String {
+class Dummy : GetScoreProtocol, GetAdviceProtocol {
+    func getScore(image: UIImage, theme: Theme) -> String {
         "40点です"
     }
     

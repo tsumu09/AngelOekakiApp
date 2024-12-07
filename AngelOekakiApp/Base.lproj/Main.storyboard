@@ -149,7 +149,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="アドバイス" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OC7-CX-bXl">
-                                <rect key="frame" x="21" y="562" width="341" height="134"/>
+                                <rect key="frame" x="21" y="516" width="341" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -179,9 +179,16 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100点" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8C-i0-A21">
-                                <rect key="frame" x="107" y="464" width="178" height="81"/>
+                                <rect key="frame" x="21" y="444" width="341" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="アドバイステキストアドバイステキストアドバイステキストアドバイステキストアドバイステキスト" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1Y-2A-qNi">
+                                <rect key="frame" x="16" y="552" width="346" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -191,14 +198,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="pU7-UQ-v6r"/>
                     <connections>
-                        <outlet property="adviceLabel" destination="OC7-CX-bXl" id="hV6-hO-72N"/>
+                        <outlet property="adviceLabel" destination="n1Y-2A-qNi" id="ECj-Pb-f9n"/>
                         <outlet property="drawedImageView" destination="hq3-Sa-RjF" id="EJT-dF-pxb"/>
                         <outlet property="resultScoreLabel" destination="a8C-i0-A21" id="5YD-JP-VHh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T5g-50-9rR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2679" y="4"/>
+            <point key="canvasLocation" x="2678.6259541984732" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
