@@ -8,5 +8,5 @@
 import UIKit
 
 protocol GetScoreProtocol {
-    func getScore(image: UIImage, theme: Theme) -> String
+    func getScore(image: UIImage, theme: Theme) async -> String
 }

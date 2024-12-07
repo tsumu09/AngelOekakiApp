@@ -13,18 +13,22 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var adviceLabel: UILabel!
     var picturedImage: UIImage?
     let getScore: GetScoreProtocol = Dummy()
-    let getAdvice: GetAdviceProtocol = Dummy()
+    let getAdvice: GetAdviceProtocol = ChaGPT()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let score = getScore.getScore(image: picturedImage!, theme: .init(id: 1, name: "test", imageName: "test"))
-        let advice = getAdvice.getAdvice(point: 0.5, theme: .init(id: 1, name: "test", imageName: "test"))
-
-        drawedImageView.image = picturedImage
-        resultScoreLabel.text = score
-        adviceLabel.text = advice
+        Task {
+            let score = await getScore.getScore(image: picturedImage!, theme: .init(id: 1, name: "test", imageName: "test"))
+            let advice = await getAdvice.getAdvice(image: picturedImage!)
+            
+            drawedImageView.image = picturedImage
+            resultScoreLabel.text = score
+            adviceLabel.text = advice
+        }
+        
+        drawedImageView.image = UIImage()
+        resultScoreLabel.text = "..."
+        adviceLabel.text = "advice"
     }
-    
-
 }
