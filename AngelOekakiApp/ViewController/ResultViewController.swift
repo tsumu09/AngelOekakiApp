@@ -12,7 +12,7 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var resultScoreLabel: UILabel!
     @IBOutlet weak var adviceLabel: UILabel!
     var picturedImage: UIImage?
-    let getScore: GetScoreProtocol = Dummy()
+    let getScore: GetScoreProtocol = ChaGPT()
     let getAdvice: GetAdviceProtocol = ChaGPT()
 
     override func viewDidLoad() {
