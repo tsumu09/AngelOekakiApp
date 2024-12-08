@@ -16,8 +16,8 @@ class ResultViewController: UIViewController {
     
     var picturedImage: UIImage?
     var theme: Theme?
-    let getScore: GetScoreProtocol = DummyScore()
-    let getAdvice: GetAdviceProtocol = DummyAdvice()
+    let getScore: GetScoreProtocol = GetScore()
+    let getAdvice: GetAdviceProtocol = GetAdvice()
 
     override func viewDidLoad() {
         super.viewDidLoad()
