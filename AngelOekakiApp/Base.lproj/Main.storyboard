@@ -222,7 +222,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5W-uL-wKS">
-                                <rect key="frame" x="42" y="690" width="120" height="120"/>
+                                <rect key="frame" x="42" y="704" width="120" height="120"/>
                                 <color key="backgroundColor" red="0.85618692669999996" green="0.9416971703" blue="0.99183422330000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="4dU-p4-eYb"/>
@@ -244,7 +244,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Po-FT-Sg4">
-                                <rect key="frame" x="231" y="690" width="120" height="120"/>
+                                <rect key="frame" x="231" y="704" width="120" height="120"/>
                                 <color key="backgroundColor" red="0.85618692669999996" green="0.9416971703" blue="0.99183422330000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="YRW-BS-ubC"/>
@@ -268,14 +268,14 @@
                             <constraint firstItem="a8C-i0-A21" firstAttribute="top" secondItem="ylp-qO-Fdo" secondAttribute="top" constant="40" id="GUs-2W-GiK"/>
                             <constraint firstItem="P5W-uL-wKS" firstAttribute="leading" secondItem="ylp-qO-Fdo" secondAttribute="leading" constant="42" id="HRL-I8-ADk"/>
                             <constraint firstItem="n1Y-2A-qNi" firstAttribute="top" secondItem="OC7-CX-bXl" secondAttribute="bottom" constant="14" id="JmD-zo-GS9"/>
-                            <constraint firstItem="ylp-qO-Fdo" firstAttribute="bottom" secondItem="P5W-uL-wKS" secondAttribute="bottom" constant="42" id="R0l-bB-h6r"/>
+                            <constraint firstItem="ylp-qO-Fdo" firstAttribute="bottom" secondItem="P5W-uL-wKS" secondAttribute="bottom" constant="28" id="R0l-bB-h6r"/>
                             <constraint firstItem="n1Y-2A-qNi" firstAttribute="leading" secondItem="ylp-qO-Fdo" secondAttribute="leading" constant="42" id="RvS-Bw-Bmz"/>
                             <constraint firstItem="OC7-CX-bXl" firstAttribute="top" secondItem="hq3-Sa-RjF" secondAttribute="bottom" constant="20" id="Vjt-Rr-7dv"/>
                             <constraint firstItem="OC7-CX-bXl" firstAttribute="leading" secondItem="ylp-qO-Fdo" secondAttribute="leading" constant="42" id="Vzh-NB-ZrI"/>
                             <constraint firstItem="a8C-i0-A21" firstAttribute="leading" secondItem="ylp-qO-Fdo" secondAttribute="leading" constant="42" id="WTK-Bs-F42"/>
                             <constraint firstItem="ylp-qO-Fdo" firstAttribute="trailing" secondItem="6Po-FT-Sg4" secondAttribute="trailing" constant="42" id="sks-iF-FQk"/>
                             <constraint firstItem="hq3-Sa-RjF" firstAttribute="centerX" secondItem="Tjk-Sa-feg" secondAttribute="centerX" id="vAb-rZ-Gp0"/>
-                            <constraint firstItem="ylp-qO-Fdo" firstAttribute="bottom" secondItem="6Po-FT-Sg4" secondAttribute="bottom" constant="42" id="yGU-hm-jlX"/>
+                            <constraint firstItem="ylp-qO-Fdo" firstAttribute="bottom" secondItem="6Po-FT-Sg4" secondAttribute="bottom" constant="28" id="yGU-hm-jlX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pU7-UQ-v6r"/>
