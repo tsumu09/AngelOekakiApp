@@ -164,6 +164,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="アップロード">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="0Ir-36-fXN" kind="presentation" id="xCa-61-gxN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Po-FT-Sg4">
                                 <rect key="frame" x="217" y="714" width="160" height="50"/>
@@ -208,6 +211,10 @@
             <point key="canvasLocation" x="2678.6259541984732" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="BrL-EY-2s2"/>
+        <segue reference="xCa-61-gxN"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
