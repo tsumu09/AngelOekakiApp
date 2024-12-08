@@ -13,6 +13,7 @@ class ThemeSelectViewController: UIViewController {
     
     @IBOutlet weak var themeLabel: UILabel!
     @IBOutlet weak var themeImageView: UIImageView!
+    @IBOutlet weak var takePhotoButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +21,7 @@ class ThemeSelectViewController: UIViewController {
         theme = ThemeData.shared.random()
         themeLabel.text = theme?.name
         themeImageView.image = UIImage(named: theme!.imageName)
+        takePhotoButton.layer.cornerRadius = takePhotoButton.frame.height / 2
     }
     
     @IBAction func OnTapTakePhotoButton(_ sender: Any) {

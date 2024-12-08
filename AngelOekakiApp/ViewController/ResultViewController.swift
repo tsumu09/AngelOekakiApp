@@ -11,6 +11,9 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var drawedImageView: UIImageView!
     @IBOutlet weak var resultScoreLabel: UILabel!
     @IBOutlet weak var adviceLabel: UILabel!
+    @IBOutlet weak var continueButton: UIButton!
+    @IBOutlet weak var backButton: UIButton!
+    
     var picturedImage: UIImage?
     var theme: Theme?
     let getScore: GetScoreProtocol = DummyScore()
@@ -18,6 +21,9 @@ class ResultViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        continueButton.layer.cornerRadius = continueButton.frame.height / 2
+        backButton.layer.cornerRadius = backButton.frame.height / 2
         
         Task {
             let score = await getScore.getScore(image: picturedImage!, theme: theme!)
