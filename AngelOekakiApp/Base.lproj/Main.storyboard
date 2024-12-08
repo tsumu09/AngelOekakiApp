@@ -83,6 +83,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="MbX-qb-CsG"/>
                     <connections>
+                        <outlet property="themeImageView" destination="Ocn-LW-s05" id="UuR-nV-RQk"/>
+                        <outlet property="themeLabel" destination="vU4-pN-Mkv" id="5yX-GO-Tjy"/>
                         <segue destination="HvF-Z7-toD" kind="presentation" identifier="toConfirm" id="BrL-EY-2s2"/>
                     </connections>
                 </viewController>

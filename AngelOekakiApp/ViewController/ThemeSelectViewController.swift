@@ -8,10 +8,18 @@
 import UIKit
 
 class ThemeSelectViewController: UIViewController {
+    var theme: Theme? = nil
     var capturedImage: UIImage?
+    
+    @IBOutlet weak var themeLabel: UILabel!
+    @IBOutlet weak var themeImageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        theme = ThemeData.shared.random()
+        themeLabel.text = theme?.name
+        themeImageView.image = UIImage(named: theme!.imageName)
     }
     
     @IBAction func OnTapTakePhotoButton(_ sender: Any) {
@@ -31,7 +39,7 @@ class ThemeSelectViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toConfirm" {
             let destinationVC = segue.destination as? ConfirmViewController
-            destinationVC?.theme = Theme(id: 1, name: "ひまわりを描こう!!", imageName: "katuo")
+            destinationVC?.theme = theme!
             destinationVC?.picturedImage = capturedImage
         }
     }

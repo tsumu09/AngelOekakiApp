@@ -12,14 +12,15 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var resultScoreLabel: UILabel!
     @IBOutlet weak var adviceLabel: UILabel!
     var picturedImage: UIImage?
-    let getScore: GetScoreProtocol = Dummy()
-    let getAdvice: GetAdviceProtocol = Dummy()
+    var theme: Theme?
+    let getScore: GetScoreProtocol = DummyScore()
+    let getAdvice: GetAdviceProtocol = DummyAdvice()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         Task {
-            let score = await getScore.getScore(image: picturedImage!, theme: .init(id: 1, name: "test", imageName: "test"))
+            let score = await getScore.getScore(image: picturedImage!, theme: theme!)
             let advice = await getAdvice.getAdvice(image: picturedImage!)
             
             drawedImageView.image = picturedImage
@@ -28,7 +29,7 @@ class ResultViewController: UIViewController {
         }
         
         drawedImageView.image = UIImage()
-        resultScoreLabel.text = "..."
-        adviceLabel.text = "advice"
+        resultScoreLabel.text = "採点中..."
+        adviceLabel.text = "この間にできる一発をお願いします!!"
     }
 }
