@@ -22,6 +22,7 @@ class ThemeSelectViewController: UIViewController {
         themeLabel.text = theme?.name
         themeImageView.image = UIImage(named: theme!.imageName)
         takePhotoButton.layer.cornerRadius = takePhotoButton.frame.height / 2
+        themeImageView.layer.cornerRadius = themeImageView.frame.size.height * 0.1
     }
     
     @IBAction func OnTapTakePhotoButton(_ sender: Any) {

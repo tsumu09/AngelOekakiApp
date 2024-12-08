@@ -24,6 +24,7 @@ class ResultViewController: UIViewController {
         
         continueButton.layer.cornerRadius = continueButton.frame.height / 2
         backButton.layer.cornerRadius = backButton.frame.height / 2
+        drawedImageView.layer.cornerRadius = drawedImageView.frame.size.height * 0.1
         
         Task {
             let score = await getScore.getScore(image: picturedImage!, theme: theme!)
