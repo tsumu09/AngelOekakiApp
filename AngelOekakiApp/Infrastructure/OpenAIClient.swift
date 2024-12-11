@@ -19,7 +19,7 @@ class OpenAIClient {
         case url(URL)
     }
 
-    let openAI = OpenAI(apiToken: "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")
+    let openAI = OpenAI(apiToken: "")
 
     // MARK: - Private Methods
 
