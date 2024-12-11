@@ -15,17 +15,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQ4-rz-nXl">
-                                <rect key="frame" x="28.666666666666657" y="180" width="336" height="117.33333333333331"/>
-                                <string key="text">エンジェルの
-おえかきちょう</string>
-                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="48"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackGround" translatesAutoresizingMaskIntoConstraints="NO" id="lUk-fd-vv6">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BhI-0E-dnk">
-                                <rect key="frame" x="96.666666666666686" y="497.33333333333326" width="200" height="200"/>
-                                <color key="backgroundColor" red="0.85618692667931717" green="0.94169717029867306" blue="0.99183422327041626" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="96.666666666666686" y="500" width="200" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="3NJ-AF-DPU"/>
                                     <constraint firstAttribute="width" constant="200" id="si0-pI-JLU"/>
@@ -43,10 +38,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.13921062898304332" green="0.14566479104664315" blue="0.37580541237113407" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="BhI-0E-dnk" firstAttribute="top" secondItem="jQ4-rz-nXl" secondAttribute="bottom" constant="200" id="0oI-Wt-dlR"/>
-                            <constraint firstItem="jQ4-rz-nXl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="180" id="LVT-ia-931"/>
+                            <constraint firstItem="lUk-fd-vv6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AUI-rB-FnV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lUk-fd-vv6" secondAttribute="trailing" id="CBg-qs-58W"/>
+                            <constraint firstItem="lUk-fd-vv6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KIT-sN-6V0"/>
+                            <constraint firstItem="lUk-fd-vv6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PT2-xi-pxu"/>
                             <constraint firstItem="BhI-0E-dnk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SnY-UC-QN1"/>
-                            <constraint firstItem="jQ4-rz-nXl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wq6-qJ-VR7"/>
+                            <constraint firstItem="BhI-0E-dnk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="500" id="teb-IO-0iX"/>
+                            <constraint firstItem="lUk-fd-vv6" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="udD-eY-On0"/>
                         </constraints>
                     </view>
                     <connections>
@@ -68,19 +66,19 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ひまわり" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vU4-pN-Mkv">
                                 <rect key="frame" x="42" y="72" width="168" height="52"/>
                                 <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="42"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20秒以内に" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6h-3i-EvI">
                                 <rect key="frame" x="42" y="42" width="91" height="22"/>
                                 <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="18"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="を紙にかけ!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBO-H2-UYN">
                                 <rect key="frame" x="42" y="132" width="100" height="22"/>
                                 <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="18"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ocn-LW-s05">
@@ -108,7 +106,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fb3-3e-N8L"/>
-                        <color key="backgroundColor" red="0.139210629" green="0.14566479099999999" blue="0.37580541239999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.79215681550000006" green="0.95686274770000002" blue="0.99215686319999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Ocn-LW-s05" firstAttribute="centerX" secondItem="1ID-CS-aes" secondAttribute="centerX" id="5X5-Tv-fBL"/>
                             <constraint firstItem="UBO-H2-UYN" firstAttribute="leading" secondItem="fb3-3e-N8L" secondAttribute="leading" constant="42" id="Frc-ZG-B4W"/>
@@ -293,6 +291,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xCa-61-gxN"/>
+        <segue reference="tLZ-Df-xpH"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <image name="BackGround" width="393" height="852"/>
+    </resources>
 </document>
